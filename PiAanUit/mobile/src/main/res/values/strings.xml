@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Light on/off</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="emailadress">Opvolger@gmail.com</string>
+</resources>
