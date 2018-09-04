@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "net.opvolger.piaanuit.piaanuit"
         minSdkVersion 21
@@ -19,9 +19,9 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':api')
-    compile 'com.android.support:leanback-v17:26.+'
-    compile 'com.android.support:appcompat-v7:26.+'
-    compile 'com.github.bumptech.glide:glide:3.4.+'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':api')
+    implementation 'com.android.support:leanback-v17:26.+'
+    implementation 'com.android.support:appcompat-v7:26.+'
+    implementation 'com.github.bumptech.glide:glide:3.4.+'
 }

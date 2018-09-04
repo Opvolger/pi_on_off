@@ -41,7 +41,7 @@ public class ApiModule {
             @Override
             public void onResponse(Call call, Response response) throws IOException {
                 if (ApiModule.this.url.equals("")) {
-                    ApiModule.this.url = "http://" + response.body().string() + ":5002/";
+                    ApiModule.this.url = "http://" + response.body().string() + ":8080/api/Light/";
                 }
             }
         });
@@ -65,12 +65,12 @@ public class ApiModule {
         return instance;
     }
 
-    public Call post(String dir, Callback callback) {
+    public Call post(String action, Callback callback) {
 
-        String endpoint = this.url + dir;
+        String endpoint = this.url + action;
 
         Request request = new Request.Builder()
-                .url(this.url + dir)
+                .url(this.url + action)
                 .get()
                 .header("User-Agent", "OKCCNL Android")
                 .header("Source", "App.Android")
