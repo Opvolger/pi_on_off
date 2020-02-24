@@ -65,8 +65,8 @@ class Thread_Ping(threading.Thread):
                 urllib2.urlopen(url).read()
                 print("Ping "+ url +" done...")
             except:
-               print "Error: connect"
-               print "Unexpected error:", sys.exc_info()[0]
+               print("Error: connect")
+               print("Unexpected error:", sys.exc_info()[0])
             finally:
                 print("Ping opvolger.net")            
         print("Stopping as you wish.")

@@ -121,7 +121,7 @@ public class MainActivityTest {
         server.setDispatcher(new Dispatcher() {
             @Override
             public MockResponse dispatch(RecordedRequest request) throws InterruptedException {
-                if (request.getPath().equals("/On")){
+                if (request.getPath().contains("/On")){
                     return new MockResponse().setBody("On").setResponseCode(200);
                 } else if (request.getPath().equals("/Off")){
                     return new MockResponse().setBody("Off").setResponseCode(200);
